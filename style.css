@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark light;
+  font-family: system-ui;
+  font-size: 1.35rem;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  height: 100vh;
+  position: relative;
+  padding: 1rem;
+  background-image: linear-gradient(
+      180deg,
+      hsl(240 54% 20% / 0.5),
+      hsl(240 54% 20% / 0.9) 50%
+    ),
+    url("header-bg.avif");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+
+  display: grid;
+  place-content: center;
+}
+
+.bottom {
+  position: absolute;
+  inset: auto 0 0;
+  bottom: 0;
+  padding: 0.5rem;
+  background: firebrick;
+}
+
+main {
+  padding: 1.5rem;
+}
